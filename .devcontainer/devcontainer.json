@@ -9,6 +9,13 @@
 			"version": "8.0"
 		},
 		"ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.csdevkit"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
