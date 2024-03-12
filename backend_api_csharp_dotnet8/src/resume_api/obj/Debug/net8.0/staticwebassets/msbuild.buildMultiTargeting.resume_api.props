@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/resume_api.props" />
+</Project>
