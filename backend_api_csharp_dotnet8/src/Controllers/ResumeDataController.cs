@@ -11,8 +11,11 @@ public class UsersController : ControllerBase
 {
   private readonly ResumeContext _context;
 
-  public UsersController(ResumeContext context)
+  private readonly ILogger<UsersController> _logger;
+
+  public UsersController(ILogger<UsersController> logger, ResumeContext context)
   {
+    _logger = logger;
     _context = context;
   }
 
