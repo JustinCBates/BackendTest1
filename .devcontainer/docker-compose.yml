@@ -24,7 +24,7 @@ services:
     image: postgres:15-alpine
     restart: unless-stopped
     volumes:
-      - resume-postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
@@ -34,4 +34,4 @@ services:
       interval: 5s
 
 volumes:
-  resume-postgres-data:
+  postgres-data:
